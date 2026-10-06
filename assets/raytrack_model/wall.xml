@@ -1,0 +1,34 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="twosided" id="mat-itu_concrete">
+        	<bsdf type="diffuse">
+            		<rgb value="0.539479 0.539479 0.53948" name="reflectance"/>
+        	</bsdf>
+    	</bsdf>
+
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__2" name="elm__2">
+		<string name="filename" value="wall.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

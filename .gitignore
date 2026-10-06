@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.asv
+*.autosave
+*.log
+.DS_Store
+
+# Local environments
+.venv/
+venv/
+env/
+env2/
+
+# Large generated data and results
+freq_map*.mat
+DISTMASTER*.mat
+rm_stats*.npz
+*_results/
+cache/
+
+
+# Reproducible notebook and script outputs
+generated/
